@@ -76,7 +76,7 @@ impl FromStr for Heightmap {
 pub fn run() {
     let heightmap = Heightmap::from_str(include_str!("data/9")).unwrap();
     println!("{}", heightmap.risk_level());
-    println!("{}", heightmap.three_largest_basin_size());
+    println!("{}", heightmap.three_largest_basin_size())
 }
 
 #[cfg(test)]
